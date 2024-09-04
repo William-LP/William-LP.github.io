@@ -5,11 +5,11 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  - name: 'author'
+    label: 'Author'
+    folder: 'en/sections'
+    # create: true
+    # slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
       preview: true
     fields:
@@ -17,3 +17,37 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+  # - name: 'blog'
+  #   label: 'Blog'
+  #   folder: 'content/blog'
+  #   create: true
+  #   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+  #   editor:
+  #     preview: true
+  #   fields:
+  #     - { label: 'Title', name: 'title', widget: 'string' }
+  #     - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+  #     - { label: 'Description', name: 'description', widget: 'string' }
+  #     - { label: 'Body', name: 'body', widget: 'markdown' }
+
+
+# # some information about you
+# name: "William Le Pommelet"
+# nickname: "Will"
+# # greeting message before your name. it will default to "Hi! I am" if not provided
+# greeting: "Hi, I am"
+# image: "images/author/john.png"
+# # give your some contact information. they will be used in the footer
+# contactInfo:
+#   email: "william.lepommelet@gmail.com"
+#   phone: "+33632464838"
+#   github: William-LP
+#   linkedin: williamlepommelet
+
+# # some summary about what you do
+# summary:
+#   - I am a Developer
+#   - I am a Devops
+#   - I love servers
+#   - I work on open-source projects
+#   - I love to work with some fun projects
