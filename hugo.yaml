@@ -10,6 +10,8 @@ module:
   mounts:
   - source: static/files
     target: static/files
+  - source: static/admin
+    target: static/admin    
   - source: ./node_modules/flag-icon-css/flags
     target: static/flags
   - source: ./node_modules/@fontsource/mulish/files
