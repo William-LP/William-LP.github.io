@@ -1,7 +1,7 @@
-baseURL: https://hugo-toha.github.io
+baseURL: https://william-lp.github.io
 
-languageCode: bn
-title: "John's Blog"
+languageCode: en
+title: "Will's portfolio"
 
 # Use Hugo modules to add theme
 module:
@@ -23,14 +23,8 @@ languages:
   en:
     languageCode: en
     languageName: English
-    title: "John's Blog"
+    title: "Will's portfolio"
     weight: 1
-  bn:
-    languageCode: bn
-    languageName: বাংলা
-    title: জনের ব্লগ
-    weight: 2
-# default language for the content
 defaultContentLanguage: en
 
 
@@ -272,15 +266,15 @@ params:
     template: footer.html
     # Show/hide navigation in the footer. Default is "true".
     navigation:
-      enable: true
+      enable: false
       # show custom menus in the footer
-      customMenus: true
+      customMenus: false
     # Show/hide "Contact Me" section in the footer. Default is "true".
     contactMe:
-      enable: true
+      enable: false
     # Show/hide credentials section in the footer. Default is "true".
     credentials:
-      enable: true
+      enable: false
 
     # Show/hide newsletter section in the footer. Default is "true".
     # Currently, it supports "mailchimp".
