@@ -9,7 +9,7 @@ experiences:
       name: PowerUp
       url: https://powerup-technology.com/fr/
       location: Chambéry
-      logo: https://powerup-technology.com/wp-content/uploads/2021/10/logo-bl.svg
+      logo: /images/sections/experiences/logo.png
       overview: PowerUp transforms battery data into actionable insights, enhancing
         the reliability, safety, and performance of battery assets through
         advanced analytics and monitoring solutions
