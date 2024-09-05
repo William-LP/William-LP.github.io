@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: William-LP/William-LP.github.io
-  branch: main 
+  branch: main
 media_folder: static/img
 public_folder: /img
 collections:
@@ -41,4 +41,84 @@ collections:
               label: "Item"
               name: "item"
               widget: "string"
+  - name: "about"
+    label: "About Section"
+    files:
+      - label: "About Page"
+        name: "about_page"
+        file: "data/en/sections/about.yaml"
+        fields:
+          - label: "Designation"
+            name: "designation"
+            widget: "string"
 
+          - label: "Company"
+            name: "company"
+            widget: "object"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "URL"
+                name: "url"
+                widget: "string"
+
+          - label: "Summary"
+            name: "summary"
+            widget: "text"
+
+          - label: "Social Links"
+            name: "socialLinks"
+            widget: "list"
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "Icon"
+                name: "icon"
+                widget: "string"
+              - label: "URL"
+                name: "url"
+                widget: "string"
+              - label: "Rel"
+                name: "rel"
+                widget: "string"
+                required: false
+
+          - label: "Resource Links"
+            name: "resourceLinks"
+            widget: "list"
+            fields:
+              - label: "Title"
+                name: "title"
+                widget: "string"
+              - label: "URL"
+                name: "url"
+                widget: "string"
+
+          - label: "Badges"
+            name: "badges"
+            widget: "list"
+            fields:
+              - label: "Type"
+                name: "type"
+                widget: "string"
+              - label: "Name"
+                name: "name"
+                widget: "string"
+              - label: "URL"
+                name: "url"
+                widget: "string"
+              - label: "Badge"
+                name: "badge"
+                widget: "image"
+                media_folder: "static/images/badges"
+                public_folder: "/images/badges"
+              - label: "Percentage"
+                name: "percentage"
+                widget: "number"
+                required: false
+              - label: "Color"
+                name: "color"
+                widget: "string"
+                required: false
