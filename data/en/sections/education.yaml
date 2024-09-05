@@ -21,6 +21,7 @@ degrees:
     takenCourses:
       showGrades: false
       collapseAfter: 3
+      courses: []
   - timeframe: 2015-2017
     custonSections:
       - name: Thesis
