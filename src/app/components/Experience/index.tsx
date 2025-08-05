@@ -38,7 +38,7 @@ const Experience = () => {
                     <div className="flex justify-center items-center">
                         <button
                             onClick={() => setShowMore(!showMore)}
-                            className="px-4 py-2 bg-gray-100 hover:bg-gray-200 text-sm text-gray-800 rounded-md shadow-sm transition duration-200"
+                            className="px-4 py-2 bg-gray-100 dark:bg-gray-700 dark:text-white dark:hover:bg-gray-600 hover:bg-gray-200 text-sm text-gray-800 rounded-md shadow-sm"
                         >
                             {showMore ? "Show less experiences" : `Show all ${appData.experience.length} experiences`}
                         </button>

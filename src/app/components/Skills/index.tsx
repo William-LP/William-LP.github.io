@@ -1,7 +1,12 @@
 import React from 'react'
 import { appData } from '@/app/data/AppData'
+import { Theme } from '@/app/types/Theme'
 
-const Skills = () => {
+const Skills = ({ theme }: { theme?: Theme }) => {
+
+    // we need to revert the theme for the icons for better contrast
+    const iconsTheme = theme === Theme.dark ? Theme.light : Theme.dark
+
     return (
         <section id="skills" className='py-12 bg-gray-50 dark:bg-gray-800'>
             <div className='container mx-auto px-6 max-w-4xl'>
@@ -14,7 +19,7 @@ const Skills = () => {
                                 {skill.tech.map((tech) => (
                                     <div className="relative group inline-block" key={tech.name}>
                                         <img
-                                            src={`https://skillicons.dev/icons?i=${tech.skilliconsShortCode}`}
+                                            src={`https://skillicons.dev/icons?i=${tech.skilliconsShortCode}&theme=${iconsTheme}`}
                                             alt={tech.name}
                                             title={tech.name}
                                             className="w-10 h-10 hover:scale-110 transition-transform"

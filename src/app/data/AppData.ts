@@ -19,7 +19,10 @@ type Project = {
     title: string,
     subTitle: string,
     description: string,
-    logoSrc: string
+    logoSrc: {
+        light: string,
+        dark: string
+    }
     link?: string,
     githubRepo?: string,
     techStack?: string[]
@@ -443,7 +446,10 @@ export const appData: AppData = {
             description: "BetterText is a lightweight ChatGPT integration I built to bring AI-powered writing assistance directly into any text field, making it instantly accessible without breaking your flow.",
             subTitle: "desd",
             title: "BetterText.",
-            logoSrc: "bettertext.svg",
+            logoSrc: {
+                light: "bettertext-light.svg",
+                dark: "bettertext-dark.svg"
+            },
             link: "https://www.youtube.com/watch?v=aHvwjWv97yw",
             techStack: ["Go", "ReactJS", "TypeScript", "Tailwind"]
         },
@@ -454,7 +460,10 @@ export const appData: AppData = {
             title: "Follicare",
             link: "https://follica.re",
             techStack: ["ReactJS", "Supabase", "NextJS", "Kubernetes", "Docker", "Tailwind",],
-            logoSrc: "follicare.svg"
+            logoSrc: {
+                dark: "follicare-dark.svg",
+                light: "follicare-light.svg",
+            }
         },
         {
             date: "2024",
@@ -463,7 +472,10 @@ export const appData: AppData = {
             title: "Urbanlock",
             link: "https://urbanlock.fr",
             techStack: ["ReactJS", "TypeScript", "Azure", "MongoDB", "Firebase", "CI/CD", "Terraform"],
-            logoSrc: "urbanlock.jpg"
+            logoSrc: {
+                light: "urbanlock.jpg",
+                dark: "urbanlock.jpg"
+            }
         }
     ],
     hobbies: [

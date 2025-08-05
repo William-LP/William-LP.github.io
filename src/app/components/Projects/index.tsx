@@ -14,7 +14,8 @@ const Projects = () => {
           {appData.projects.map((project) => (
             <div key={project.title} className='flex gap-6'>
               <div className="flex-shrink-0 w-20 h-20 flex items-center justify-center">
-                <img src={`/projects/${project.logoSrc}`} alt="Project Logo" className="w-10 h-10 object-contain" />
+                <img src={`/projects/${project.logoSrc.dark}`} alt="Project Logo" className="w-10 h-10 object-contain dark:hidden" />
+                <img src={`/projects/${project.logoSrc.light}`} alt="Project Logo" className="w-10 h-10 object-contain hidden dark:block" />
               </div>
               <div className='flex-1'>
                 <div className='flex items-start justify-between mb-2'>
