@@ -6,7 +6,7 @@ const Hobbies = () => {
         <section id="hobbies" className='py-12 bg-gray-50 dark:bg-gray-800'>
             <div className='container mx-auto px-6 max-w-4xl'>
                 <h2 className='text-2xl font-bold text-gray-900 dark:text-white mb-8'>Hobbies</h2>
-                <div className={`grid grid-cols-3 gap-12`}>
+                <div className={`grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-12`}>
                     {
                         appData.hobbies.map((hobby) => (
                             <div key={hobby.name} className='w-full'>

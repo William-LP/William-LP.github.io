@@ -41,7 +41,7 @@ const AboutMe = () => {
                             <p className='text-xl text-gray-600 dark:text-gray-400 mb-4'>{appData.aboutMe.occupation}</p>
                             <p className='text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl'>{appData.aboutMe.introText}</p>
                         </div>
-                        <div className='flex flex-wrap gap-6 text-sm text-gray-600 dark:text-gray-400'>
+                        <div className='flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-6 text-sm text-gray-600 dark:text-gray-400'>
                             {appData.aboutMe.contact.email && (<Link href={`mailto:${appData.aboutMe.contact.email}`} className='hover:text-gray-900 dark:hover:text-white'>
                                 {appData.aboutMe.contact.email}
                             </Link>)}
