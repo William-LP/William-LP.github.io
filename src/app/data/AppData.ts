@@ -177,7 +177,7 @@ export const appData: AppData = {
     },
     aboutMe: {
         name: "William Le Pommelet",
-        occupation: "DevOps / Plateform Engineer / SRE / DevSecOps / FinOps",
+        occupation: "DevSecFinOps / Plateform Engineer / SRE",
         introText: "DevOps Engineer with strong infrastructure expertise and full-stack skills. I build scalable, automated systems focused on reliability and performance. I'm keen to work in cybersecurity, blockchain, or AI, where infrastructure drives innovation.",
         contact: {
             email: "william.lepommelet@gmail.com",
