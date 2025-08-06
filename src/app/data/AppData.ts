@@ -407,7 +407,7 @@ export const appData: AppData = {
         },
         {
             name: "Magician",
-            description: "From time to time I perform as a magician in casinos, weddings, galas, brasserie and such."
+            description: "I've been performing as a magician on the side since I was 17, appearing at casinos, weddings, galas, and other special events from time to time."
         }
     ]
 }
