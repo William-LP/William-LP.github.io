@@ -17,7 +17,7 @@ type Skill = {
 type Project = {
     date: string,
     title: string,
-    subTitle: string,
+    subTitle?: string,
     description: string,
     logoSrc: {
         light: string,
@@ -35,7 +35,7 @@ type Experience = {
     },
     title: string,
     company: string,
-    description: string,
+    description: string[],
     techStack: string[]
 }
 
@@ -48,7 +48,7 @@ type Education = {
     school: string,
     location: string,
     description: string,
-    techStack?: string[]
+    academicAchievement?: string[]
 }
 
 
@@ -59,7 +59,8 @@ type AboutMe = {
     contact: {
         email?: string,
         phone?: string,
-        location?: string
+        location?: string,
+        website?: string
     },
     socials: Social[]
     pgpPublicKey?: string,
@@ -182,7 +183,8 @@ export const appData: AppData = {
         contact: {
             email: "william.lepommelet@gmail.com",
             phone: "+33 6 32 46 48 38",
-            location: "Chambéry, France"
+            location: "Chambéry, France",
+            website: "https://william-lp.github.io/"
 
 
         },
@@ -201,11 +203,13 @@ export const appData: AppData = {
     experience: [
         {
             company: "PowerUp",
-            description: `<ul class='list-disc'><li>Joined as the second engineer to take over infra subjects and built a scalable, cost-efficient cloud infrastructure for a data SaaS product.</li>
-                        <li>Setup everything : clusters, CI/CD, monitoring, tooling, documentation, Azure resources and more. </li>
-                        <li>Optimized cloud resources usage and setup a partnership deal with Microsoft of $100.000 free credits.</li>
-                        <li>Hired and trained the dev team on Kubernetes and cloud technologies.</li>
-                        <li>Led cybersecurity efforts and contributed to product development.</li></ul>`
+            description: [
+                "Joined as the second engineer to take over infra subjects and built a scalable, cost-efficient cloud infrastructure for a data SaaS product.",
+                "Setup everything : clusters, CI/CD, monitoring, tooling, documentation, Azure resources and more.",
+                "Optimized cloud resources usage and setup a partnership deal with Microsoft of $100.000 free credits.",
+                "Hired and trained the dev team on Kubernetes and cloud technologies.",
+                "Led cybersecurity efforts and contributed to product development."
+            ]
             ,
             period: {
                 from: "Jan. 2022",
@@ -232,7 +236,10 @@ export const appData: AppData = {
         },
         {
             company: "Schneider Electric",
-            description: `<ul class='list-disc'><li>Training US/EU/IN based teams on DevOps best practices</li><li>Delivery of ready-to-use infrastructure components to external teams.</li></ul>`,
+            description: [
+                "Training US/EU/IN based teams on DevOps best practices",
+                "Delivery of ready-to-use infrastructure components to external teams."
+            ],
             period: {
                 from: "Sep. 2021",
                 to: "Feb. 2022"
@@ -251,7 +258,7 @@ export const appData: AppData = {
         },
         {
             company: "Capgemini",
-            description: `I build infra on Azure for a variety of clients (Michelin, Bayer, Total...)`,
+            description: ["I build infra on Azure for a variety of clients (Michelin, Bayer, Total...)"],
             period: {
                 from: "Aug. 2020",
                 to: "Sep. 2021"
@@ -261,7 +268,7 @@ export const appData: AppData = {
         },
         {
             company: "Capgemini",
-            description: `I streamline production deployments and replace manual operations with scripts that do the job cheaper and better than humans.`,
+            description: ["I streamline production deployments and replace manual operations with scripts that do the job cheaper and better than humans."],
             period: {
                 from: "Sep. 2017",
                 to: "Sep. 2019"
@@ -271,7 +278,7 @@ export const appData: AppData = {
         },
         {
             company: "Aberdeenshire City Counci",
-            description: `I was part of a 8 people team to design and build a unified wireless and backbone network accross Scotland. This was as fun as challenging.`,
+            description: ["I was part of a 8 people team to design and build a unified wireless and backbone network accross Scotland. This was as fun as challenging."],
             period: {
                 from: "Jan. 2016",
                 to: "Jun. 2017"
@@ -281,7 +288,7 @@ export const appData: AppData = {
         },
         {
             company: "Cap'Info",
-            description: `I automated most of my day-to-day tasks which consisted of providing our customers (UK/FR) assistance on well known and recurring problems. This reduced the average intervention time by 80% within our team.`,
+            description: ["I automated most of my day-to-day tasks which consisted of providing our customers (UK/FR) assistance on well known and recurring problems. This reduced the average intervention time by 80% within our team."],
             period: {
                 from: "Dec. 2013",
                 to: "Aug. 2014"
@@ -310,12 +317,12 @@ export const appData: AppData = {
                 to: "2017"
             },
             school: "Robert Gordon University",
-            techStack: ["First-Class Honours"]
+            academicAchievement: ["First-Class Honours"]
         },
         {
             degree: "Licence, Administration and Security of Systems and Networks",
-            description: "Computer Network Management and Design",
-            location: "Aberdeen",
+            description: "Wireless Networks and Cyber Security",
+            location: "Clermont-Ferrand",
             period: {
                 from: "2014",
                 to: "2015"
@@ -444,7 +451,6 @@ export const appData: AppData = {
         {
             date: "2025",
             description: "BetterText is a lightweight ChatGPT integration I built to bring AI-powered writing assistance directly into any text field, making it instantly accessible without breaking your flow.",
-            subTitle: "desd",
             title: "BetterText.",
             logoSrc: {
                 light: "bettertext-light.svg",
@@ -456,7 +462,6 @@ export const appData: AppData = {
         {
             date: "2025",
             description: "Follicare is a post-op follow-up platform I developed to help clinics save time by automating patient recovery tracking, delivering care instructions, and maintaining ongoing visibility into each patient's healing process.",
-            subTitle: "desd",
             title: "Follicare",
             link: "https://follica.re",
             techStack: ["ReactJS", "Supabase", "NextJS", "Kubernetes", "Docker", "Tailwind",],
@@ -468,7 +473,6 @@ export const appData: AppData = {
         {
             date: "2024",
             description: "Urbanlock is a real-time multiplayer digital outdoor escape game.",
-            subTitle: "desd",
             title: "Urbanlock",
             link: "https://urbanlock.fr",
             techStack: ["ReactJS", "TypeScript", "Azure", "MongoDB", "Firebase", "CI/CD", "Terraform"],

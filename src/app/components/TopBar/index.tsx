@@ -2,8 +2,14 @@
 
 import React, { useState } from 'react'
 import { appData } from '@/app/data/AppData'
-import { MoonIcon, SunIcon, MenuIcon, XIcon } from 'lucide-react'
+import { MoonIcon, SunIcon, MenuIcon, XIcon, FileTextIcon, LoaderIcon } from 'lucide-react'
 import { Theme } from '@/app/types/Theme'
+import dynamic from 'next/dynamic';
+const PDFDownloadLink = dynamic(
+    () => import('@react-pdf/renderer').then(mod => mod.PDFDownloadLink),
+    { ssr: false }
+);
+import { PdfResume } from '../PdfResume'
 
 const TopBar = ({ theme, setTheme }: { theme: Theme, setTheme: () => void }) => {
 
@@ -26,6 +32,27 @@ const TopBar = ({ theme, setTheme }: { theme: Theme, setTheme: () => void }) => 
                         ))}
                     </div>
                     <div className='flex items-center space-x-2'>
+
+
+                        <div className="relative group inline-block" >
+                            <PDFDownloadLink
+                                document={<PdfResume />}
+                                fileName={`${appData.aboutMe.name}'s resume.pdf`}
+                                className='p-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white'
+                            >
+                                {({ loading }) =>
+                                    loading ? <LoaderIcon /> : <FileTextIcon />
+                                }
+                            </PDFDownloadLink>
+                            <div className="absolute top-full mb-2 left-1/2 -translate-x-1/2 scale-0 group-hover:scale-100 transition-all bg-black text-white text-xs rounded py-1 px-2 z-10 whitespace-nowrap">
+                                Download as PDF
+                            </div>
+                        </div>
+
+
+
+
+
                         <button className='p-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white' onClick={setTheme} >
                             {theme === Theme.dark ? <SunIcon /> : <MoonIcon />}
                         </button>

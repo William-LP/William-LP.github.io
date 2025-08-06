@@ -20,7 +20,7 @@ const Education = () => {
                                 <p className='text-gray-600 dark:text-gray-400 mb-2'>{education.school} • {education.location}</p>
                                 <p className='text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-3'>{education.description}</p>
                                 <div className='flex flex-wrap gap-2'>
-                                    {education.techStack?.map((item) => (
+                                    {education.academicAchievement?.map((item) => (
                                         <span key={item} className='px-2 py-1 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs rounded'>
                                             {item}
                                         </span>
