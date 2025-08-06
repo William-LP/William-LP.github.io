@@ -22,11 +22,9 @@ export default function Home() {
     if (currentTheme === 'dark') {
       setTheme(Theme.light)
       html.setAttribute('data-theme', 'light');
-      localStorage.setItem('theme', 'light');
     } else {
       setTheme(Theme.dark)
       html.setAttribute('data-theme', 'dark');
-      localStorage.setItem('theme', 'dark');
     }
   };
 
