@@ -85,5 +85,8 @@ export type AppData = {
     education: Education[],
     skills: Skill[]
     projects: Project[],
-    hobbies: Hobby[]
+    hobbies: Hobby[],
+    googleAnalytics?: {
+        googleTagId: string
+    }
 }

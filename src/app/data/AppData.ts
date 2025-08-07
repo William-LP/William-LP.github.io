@@ -409,5 +409,8 @@ export const appData: AppData = {
             name: "Magician",
             description: "I've been performing as a magician on the side since I was 17, appearing at casinos, weddings, galas, and other special events from time to time."
         }
-    ]
+    ],
+    googleAnalytics: {
+        googleTagId: "G-MV0S89QV9F"
+    }
 }
