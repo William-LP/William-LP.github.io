@@ -191,7 +191,7 @@ export const appData: AppData = {
             title: "DevOps Engineer"
         },
         {
-            company: "Aberdeenshire City Counci",
+            company: "Aberdeenshire City Council",
             description: ["I was part of a 8 people team to design and build a unified wireless and backbone network accross Scotland. This was as fun as challenging."],
             period: {
                 from: "Jan. 2016",
