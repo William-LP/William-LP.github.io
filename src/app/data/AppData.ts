@@ -92,8 +92,8 @@ export const appData: AppData = {
     },
     aboutMe: {
         name: "William Le Pommelet",
-        occupation: "DevSecFinOps / Plateform Engineer / SRE",
-        introText: "DevOps Engineer with strong infrastructure expertise and full-stack skills. I build scalable, automated systems focused on reliability and performance. I'm keen to work in cybersecurity, blockchain, or AI, where infrastructure drives innovation.",
+        occupation: "DevSecFinOps / Plateform Engineer / SRE / AppSec",
+        introText: "DevOps Engineer with strong infrastructure expertise and full-stack skills. I build scalable, automated systems focused on reliability and performance. I'm keen to work in cybersecurity, blockchain, or AI.",
         contact: {
             email: "william.lepommelet@gmail.com",
             phone: "+33 6 32 46 48 38",
@@ -399,7 +399,7 @@ export const appData: AppData = {
     hobbies: [
         {
             name: "Sports",
-            description: "I practice sports on a daily basis. I do CrossFit, Judo, and some mountain sports. I like staying active and trying different things."
+            description: "I practice sports on a daily basis. I do CrossFit, judo, running and mountain sports. I like staying active and trying different things."
         },
         {
             name: "Security Research",
