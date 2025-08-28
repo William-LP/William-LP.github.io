@@ -350,6 +350,10 @@ export const appData: AppData = {
                     name: "NextJS",
                     skilliconsShortCode: "nextjs"
                 },
+		{
+		    name:"Vite",
+		    skilliconsShortCode: "vite"
+		},
                 {
                     name: "Tailwind",
                     skilliconsShortCode: "tailwind"
