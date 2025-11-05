@@ -119,7 +119,7 @@ export const appData: AppData = {
             company: "PowerUp",
             description: [
                 "Joined as the second engineer to take over infra subjects and built a scalable, cost-efficient cloud infrastructure for a data SaaS product.",
-                "Setup everything : clusters, CI/CD, monitoring, tooling, documentation, Azure resources and more.",
+                "Setup everything : clusters, CI/CD, monitoring, tooling, documentation, Azure resources, database dynamic replication, backups and more.",
                 "Optimized cloud resources usage and setup a partnership deal with Microsoft of $100.000 free credits.",
                 "Hired and trained the dev team on Kubernetes and cloud technologies.",
                 "Led cybersecurity efforts and contributed to product development."
