@@ -367,6 +367,17 @@ export const appData: AppData = {
     ],
     projects: [
         {
+            date: "2026",
+            description: "Sherlock analyzes the visual content of an image to deduce GPS coordinates. Architecture, vegetation, signage. No metadata, no EXIF, no LLM. Just pure machine learning.",
+            title: "Sherlock.",
+            logoSrc: {
+                light: "sherlock.png",
+                dark: "sherlock.png"
+            },
+            link: "https://youtu.be/LKC-MHUDC3g",
+            techStack: ["Computer Vision", "ReactJS", "Python"]
+        },
+		{
             date: "2025",
             description: "BetterText is a lightweight ChatGPT integration I built to bring AI-powered writing assistance directly into any text field, making it instantly accessible without breaking your flow.",
             title: "BetterText.",
@@ -375,7 +386,7 @@ export const appData: AppData = {
                 dark: "bettertext-dark.svg"
             },
             link: "https://www.youtube.com/watch?v=aHvwjWv97yw",
-            techStack: ["Go", "ReactJS", "TypeScript", "Tailwind"]
+            techStack: ["Go", "Wails", "ReactJS", "TypeScript", "Tailwind"]
         },
         {
             date: "2025",
