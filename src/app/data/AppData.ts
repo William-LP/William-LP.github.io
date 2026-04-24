@@ -119,8 +119,9 @@ export const appData: AppData = {
             company: "PowerUp",
             description: [
                 "Joined as the second engineer to take over infra subjects and built a scalable, cost-efficient cloud infrastructure for a data SaaS product.",
-                "Setup everything : clusters, CI/CD, monitoring, tooling, documentation, Azure resources, database dynamic replication, backups and more.",
-                "Optimized cloud resources usage and setup a partnership deal with Microsoft of $100.000 free credits.",
+                "Led the design and implementation of the infrastructure roadmap in alignment with business goals.",
+                "Setup everything : Kubernetes clusters, CI/CD, monitoring, tooling, documentation, Azure resources, database dynamic replication, backups and more.",
+                "Optimized cloud resources usage to drastically reduce cloud bill.",
                 "Hired and trained the dev team on Kubernetes and cloud technologies.",
                 "Led cybersecurity efforts and contributed to product development."
             ]
@@ -350,10 +351,10 @@ export const appData: AppData = {
                     name: "NextJS",
                     skilliconsShortCode: "nextjs"
                 },
-		{
-		    name:"Vite",
-		    skilliconsShortCode: "vite"
-		},
+                {
+                    name: "Vite",
+                    skilliconsShortCode: "vite"
+                },
                 {
                     name: "Tailwind",
                     skilliconsShortCode: "tailwind"
@@ -368,6 +369,17 @@ export const appData: AppData = {
     projects: [
         {
             date: "2026",
+            description: "Zapia is an AI driven web design agency and a cloud hosting provider, offering both the creation of websites as well as the infrastructure to deploy and run them.",
+            title: "Zapia",
+            logoSrc: {
+                light: "zapia.svg",
+                dark: "zapia.svg"
+            },
+            link: "https://zapia.fr",
+            techStack: ["Kubernetes", "Docker", "Flux", "Traefik", "MetalLB", "Longhorn", "Cert Manager", "Sealed Secret", "Prometheus", "Grafana", "Github Action"]
+        },
+        {
+            date: "2026",
             description: "Sherlock analyzes the visual content of an image to deduce GPS coordinates. Architecture, vegetation, signage. No metadata, no EXIF, no LLM. Just pure machine learning.",
             title: "Sherlock.",
             logoSrc: {
@@ -377,7 +389,7 @@ export const appData: AppData = {
             link: "https://youtu.be/LKC-MHUDC3g",
             techStack: ["Computer Vision", "ReactJS", "Python"]
         },
-		{
+        {
             date: "2025",
             description: "BetterText is a lightweight ChatGPT integration I built to bring AI-powered writing assistance directly into any text field, making it instantly accessible without breaking your flow.",
             title: "BetterText.",
