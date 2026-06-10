@@ -116,6 +116,30 @@ export const appData: AppData = {
     },
     experience: [
         {
+            company: "WLP Company",
+            description: [
+                "Launching various SaaS.",
+                "Occasional freelance assignments for different companies.",
+            ]
+            ,
+            period: {
+                from: "Jan. 2024",
+                to: "Now"
+            },
+            techStack: [
+                "Kubernetes",
+                "Docker",
+                "Azure",
+                "Supabase",
+                "TypeScript",
+                "ReactJS",
+                "Python",
+                "Observability",
+                "CICD",
+            ],
+            title: "Self Employed"
+        },
+        {
             company: "PowerUp",
             description: [
                 "Joined as the second engineer to take over infra subjects and built a scalable, cost-efficient cloud infrastructure for a data SaaS product.",
