@@ -84,6 +84,7 @@ export const appData: AppData = {
         sections: [
             "Home",
             "Experience",
+            "Certifications",
             "Education",
             "Skills",
             "Projects",
@@ -267,6 +268,47 @@ export const appData: AppData = {
                 to: "2015"
             },
             school: "Université Clermont Auvergne",
+        }
+    ],
+    certifications: [
+        {
+            image: "azure-fundamentals.png",
+            title: "Azure Fundamentals (AZ-900)",
+            issuer: "Microsoft",
+            description: "Earners of the Azure Fundamentals certification have demonstrated foundational level knowledge of cloud services and how those services are provided with Microsoft Azure.",
+            link: "https://www.credly.com/badges/53e43bff-504c-4f43-bae1-f4346fbf86cd"
+        },
+        {
+            image: "azure-administrator.png",
+            title: "Azure Administrator Associate (AZ-104)",
+            issuer: "Microsoft",
+            link: "https://www.credly.com/badges/13ea66d2-489e-4719-a11b-e3f78123c1c1",
+            expirationDate: "09-05-2024",
+            description: "Earning Azure Administrator Associate certification validates the skills and knowledge to implement, manage, and monitor an organization’s Microsoft Azure environment. Candidates have a deep understanding of each implementing, managing, and monitoring identity, governance, storage, compute, and virtual networks in a cloud environment, plus provision, size, monitor, and adjust resources, when needed."
+        },
+        {
+            image: "azure-security-engineer-.png",
+            title: "Azure Security Engineer Associate (AZ-500)",
+            issuer: "Microsoft",
+            expirationDate: "03-05-2024",
+            link: "https://www.credly.com/badges/5bf75b60-35cf-478a-a9cb-847f4fa8db35",
+            description: "Earning Azure Security Engineer Associate certification validates the skills and knowledge to implement security controls and threat protection, manage identity and access, and protect data, applications, and networks in cloud and hybrid environments as part of end-to-end infrastructure."
+        },
+        {
+            image: "azure-solutions-architect.png",
+            title: "Azure Solutions Architect Expert (AZ-305)",
+            issuer: "Microsoft",
+            expirationDate: "09-03-2024",
+            link: "https://www.credly.com/badges/60dd2fe0-5313-4967-831a-13837fd39fdd",
+            description: "Earning the Azure Solutions Architect Expert certification demonstrates subject matter expertise in designing cloud and hybrid solutions that run on Microsoft Azure, including compute, network, storage, monitoring, and security. Candidates have advanced experience and knowledge across IT operations, including networking, virtualization, identity, security, business continuity, disaster recovery, data platforms, and governance."
+        },
+        {
+            image: "devops-engineer.png",
+            title: "Azure DevOps Engineer Expert (AZ-400)",
+            issuer: "Microsoft",
+            link: "https://www.credly.com/badges/b6413d0a-6c4e-4dbb-8929-954b88f4dde9",
+            expirationDate: "12-05-2024",
+            description: "Earning the DevOps Engineer Expert certification demonstrates the ability to combine people, process, and technologies to continuously deliver valuable products and services that meet end user needs and business objectives. DevOps professionals streamline delivery by optimizing practices, improving communications and collaboration, and creating automation."
         }
     ],
     skills: [

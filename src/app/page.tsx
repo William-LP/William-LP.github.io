@@ -3,6 +3,7 @@
 import TopBar from '@/app/components/TopBar'
 import AboutMe from '@/app/components/AboutMe'
 import Experience from '@/app/components/Experience'
+import Certifications from '@/app/components/Certifications'
 import Education from '@/app/components/Education'
 import Projects from '@/app/components/Projects'
 import Skills from '@/app/components/Skills'
@@ -33,6 +34,7 @@ export default function Home() {
       <TopBar theme={theme} setTheme={toggleTheme} />
       <AboutMe />
       <Experience />
+      <Certifications />
       <Education />
       <Skills theme={theme} />
       <Projects />

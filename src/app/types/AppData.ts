@@ -51,6 +51,15 @@ type Education = {
     academicAchievement?: string[]
 }
 
+type Certification = {
+    image: string,
+    title: string,
+    issuer: string,
+    expirationDate?: string,
+    link?: string;
+    description: string;
+}
+
 
 type AboutMe = {
     name: string,
@@ -83,6 +92,7 @@ export type AppData = {
     aboutMe: AboutMe,
     experience: Experience[],
     education: Education[],
+    certifications: Certification[],
     skills: Skill[]
     projects: Project[],
     hobbies: Hobby[],
