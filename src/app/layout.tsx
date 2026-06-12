@@ -24,11 +24,20 @@ export const metadata: Metadata = {
     siteName: `${appData.aboutMe.name} - ${appData.aboutMe.occupation} | Resume`,
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/profile_picture.jpg",
+        width: 483,
+        height: 483,
+        alt: appData.aboutMe.name,
+      },
+    ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: `${appData.aboutMe.name} - ${appData.aboutMe.occupation} | Resume`,
     description: appData.aboutMe.introText,
+    images: ["/profile_picture.jpg"],
   },
   keywords: appData.skills.map((skill) => skill.tech.map((item) => item.name)).flat(),
   authors: [{ name: "William Le Pommelet" }],
