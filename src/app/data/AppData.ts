@@ -495,8 +495,8 @@ export const appData: AppData = {
             description: "I practice sports on a daily basis. I do CrossFit, judo, running and mountain sports. I like staying active and trying different things."
         },
         {
-            name: "Security Research",
-            description: "I enjoy casual hacking and spotting security flaws in web application. I'm not the best hacker but there are plenty of bad code out there."
+            name: "Bug Bounty",
+            description: "I enjoy casual hacking and spotting security flaws in web application."
         },
         {
             name: "Magician",
